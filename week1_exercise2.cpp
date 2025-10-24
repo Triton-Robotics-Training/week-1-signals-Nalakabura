@@ -1,14 +1,27 @@
-//STARTER 
-//THIS EXERCISE IS TO BE DONE IN THE ARM MBED SIMULATOR
-//http://195.130.59.221/
-//IF YOU HAVE ISSUES WITH THE SIMULATOR, CONTACT EMBEDDED LEAD
 #include "mbed.h"
+DigitalOut led(LED1);
+AnalogIn anInput(p15);
+float anaValue, blink_time, On_time, Off_time;
+
 
 int main() {
-    while (1) {
-        printf("Week 1 Exercise 2");
-
-        // MAKE SURE THERE IS ALWAYS A WAIT ON THE SIM OR IT WILL CRASH
-        wait_ms(500); 
+    
+    while(true){
+        anaValue = anInput.read();
+        On_time = 2 * anaValue;
+        Off_time = 2 * (1-anaValue);
+        
+        led = 1;
+        printf("LED will be ON for %.2f seconds\n", On_time);
+        wait(On_time);
+       
+        led = 0;
+        printf("LED will be OFF for %.2f seconds\n", Off_time);
+        wait(Off_time);
+        
+        
     }
+    
+    
+    
 }

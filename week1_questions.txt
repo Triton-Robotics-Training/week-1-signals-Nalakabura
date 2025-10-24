@@ -1,6 +1,12 @@
 Question 1: Explain the difference between analog and digital signals.
 
+The digital signals only has two signals which are 1 and 2. The analog signals can include many different levels of signals.
+
 Question 2: Give an example of something that uses digital signals and how it uses it.
 
+Digital signals have only two levels, 0 and 1, while analog signals can vary continuously and include many different signal levels.
+
 Question 3: Give an example of something that uses analog signals and how it uses it.
+
+A radio. We adjust the wavelength (or frequency) of the signal to hear different radio stations.
 
